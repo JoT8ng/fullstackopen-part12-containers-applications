@@ -1,0 +1,272 @@
+Script started on 2024-02-08 16:03:26+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="142" LINES="13"]
+[?2004h]0;jtang@LAPTOP-68T1LIDQ: /mnt/d/CODE/part12-containers-applications/script-answers[01;32mjtang@LAPTOP-68T1LIDQ[00m:[01;34m/mnt/d/CODE/part12-containers-applications/script-answers[00m$ sudo docker start -i nice_curie
+[?2004l[sudo] password for jtang: 
+[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# [K]0;root@71aaf7d11909: /root@71aaf7d11909:/# apt-get update
+[?2004l0% [Working]0% [Waiting for headers] [Waiting for headers]0% [Waiting for headers] [Waiting for headers]0% [Waiting for headers] [Waiting for headers]0% [Waiting for headers] [Waiting for headers]0% [Waiting for headers] [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Get:1 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+                                              Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+0% [1 InRelease 4053 B/270 kB 2%] [2 InRelease 4053 B/110 kB 4%]                                                                0% [1 InRelease 104 kB/270 kB 39%]0% [1 InRelease 104 kB/270 kB 39%]                                  Get:3 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1436 kB]
+0% [1 InRelease 241 kB/270 kB 89%] [3 Packages 4150 B/1436 kB 0%]                                                                 0% [3 Packages 12.8 kB/1436 kB 1%]0% [Waiting for headers] [3 Packages 43.3 kB/1436 kB 3%]                                                        Get:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+0% [4 InRelease 1133 B/119 kB 1%] [3 Packages 89.8 kB/1436 kB 6%]                                                                 0% [3 Packages 527 kB/1436 kB 37%]0% [Waiting for headers] [3 Packages 839 kB/1436 kB 58%]                                                        Get:5 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+0% [5 InRelease 1133 B/109 kB 1%] [3 Packages 1375 kB/1436 kB 96%]                                                                  0% [5 InRelease 14.2 kB/109 kB 13%]0% [3 Packages store 0 B] [5 InRelease 14.2 kB/109 kB 13%] [Connecting to security.ubuntu.com]                                                                                              0% [5 InRelease 43.2 kB/109 kB 40%] [Waiting for headers]                                                         Get:6 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [44.6 kB]
+0% [5 InRelease 78.1 kB/109 kB 72%] [6 Packages 2678 B/44.6 kB 6%]                                                                  0% [6 Packages 12.8 kB/44.6 kB 29%]                                   0% [Waiting for headers]0% [6 Packages store 0 B] [Waiting for headers] [Connecting to security.ubuntu.com]                                                                                   0% [Waiting for headers] [Connecting to security.ubuntu.com]                                                            Get:7 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+                                                            0% [7 Packages 2646 B/266 kB 1%] [Waiting for headers]19% [7 Packages 14.3 kB/266 kB 5%] [Waiting for headers]                                                        Get:8 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1065 kB]
+19% [7 Packages 20.1 kB/266 kB 8%] [8 Packages 4134 B/1065 kB 0%]21% [8 Packages 337 kB/1065 kB 32%]                                                                                          435 kB/s 1min 1s21% [7 Packages store 0 B] [Connecting to archive.ubuntu.com] [8 Packages 337 kB/1065 kB 32%]                                435 kB/s 1min 1s21% [Waiting for headers] [8 Packages 412 kB/1065 kB 39%]                                                                    435 kB/s 1min 1s                                                                                                                                             Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+23% [9 Packages 2644 B/1792 kB 0%] [8 Packages 861 kB/1065 kB 81%]                                                               435 kB/s 60s23% [9 Packages 14.3 kB/1792 kB 1%]                                                                                              435 kB/s 60s23% [8 Packages store 0 B] [9 Packages 14.3 kB/1792 kB 1%] [Connecting to security.ubuntu.com]                                   435 kB/s 60s24% [9 Packages 49.1 kB/1792 kB 3%] [Waiting for headers]                                                                        435 kB/s 59s                                                                                                                                             Get:10 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1746 kB]
+24% [9 Packages 122 kB/1792 kB 7%] [10 Packages 1230 B/1746 kB 0%]                                                               435 kB/s 59s29% [9 Packages 1486 kB/1792 kB 83%] [10 Packages 652 kB/1746 kB 37%]                                                            435 kB/s 55s31% [10 Packages 965 kB/1746 kB 55%]                                                                                             435 kB/s 53s31% [9 Packages store 0 B] [Connecting to archive.ubuntu.com] [10 Packages 968 kB/1746 kB 55%]                                   435 kB/s 53s33% [Waiting for headers] [10 Packages 1520 kB/1746 kB 87%]                                                                      435 kB/s 52s34% [Waiting for headers]                                                                                                        435 kB/s 51s34% [10 Packages store 0 B] [Waiting for headers]                                                                                435 kB/s 51s                                                                                                                                             Get:11 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+34% [10 Packages store 0 B] [11 Packages 4094 B/17.5 MB 0%]                                                                      435 kB/s 51s34% [11 Packages 28.8 kB/17.5 MB 0%]                                                                                             435 kB/s 51s37% [11 Packages 878 kB/17.5 MB 5%]                                                                                              435 kB/s 49s40% [11 Packages 2256 kB/17.5 MB 13%]                                                                                            435 kB/s 46s49% [11 Packages 5305 kB/17.5 MB 30%]                                                                                            435 kB/s 39s57% [11 Packages 8289 kB/17.5 MB 47%]                                                                                            435 kB/s 32s65% [11 Packages 11.3 MB/17.5 MB 64%]                                                                                            435 kB/s 26s73% [11 Packages 14.2 MB/17.5 MB 82%]                                                                                            435 kB/s 19s82% [11 Packages 17.5 MB/17.5 MB 100%]                                                                                           435 kB/s 11s82% [Working]                                                                                                                    435 kB/s 11s82% [11 Packages store 0 B] [Connecting to archive.ubuntu.com]                                                                   435 kB/s 11s                                                                                                                                             Get:12 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
+82% [11 Packages store 0 B] [12 Packages 4106 B/164 kB 3%]                                                                       435 kB/s 11s82% [11 Packages store 0 B]                                                                                                      435 kB/s 11s                                                                                                                                             Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1723 kB]
+82% [11 Packages store 0 B] [13 Packages 4104 B/1723 kB 0%]                                                                      435 kB/s 11s83% [13 Packages 43.3 kB/1723 kB 3%]                                                                                             435 kB/s 11s83% [12 Packages store 0 B] [13 Packages 43.3 kB/1723 kB 3%]                                                                     435 kB/s 11s83% [13 Packages 49.1 kB/1723 kB 3%]                                                                                             435 kB/s 11s87% [13 Packages 1551 kB/1723 kB 90%]                                                                                            3822 kB/s 0s88% [Working]                                                                                                                    3822 kB/s 0s88% [13 Packages store 0 B] [Connecting to archive.ubuntu.com]                                                                   3822 kB/s 0s88% [Waiting for headers]                                                                                                        3822 kB/s 0s                                                                                                                                             Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1800 kB]
+88% [14 Packages 2644 B/1800 kB 0%]                                                                                              3822 kB/s 0s90% [14 Packages 496 kB/1800 kB 28%]                                                                                             3822 kB/s 0s93% [Working]                                                                                                                    3822 kB/s 0s93% [14 Packages store 0 B] [Connecting to archive.ubuntu.com]                                                                   3822 kB/s 0s94% [Waiting for headers]                                                                                                        3822 kB/s 0s                                                                                                                                             Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [50.4 kB]
+94% [15 Packages 4108 B/50.4 kB 8%]                                                                                              3822 kB/s 0s94% [Working]                                                                                                                    3822 kB/s 0s94% [15 Packages store 0 B] [Connecting to archive.ubuntu.com]                                                                   3822 kB/s 0s95% [Connecting to archive.ubuntu.com (91.189.91.83)]                                                                            3822 kB/s 0s                                                                                                                                             Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1334 kB]
+95% [16 Packages 4104 B/1334 kB 0%]                                                                                              3822 kB/s 0s97% [16 Packages 755 kB/1334 kB 57%]                                                                                             3822 kB/s 0s98% [Working]                                                                                                                    3822 kB/s 0s98% [16 Packages store 0 B] [Connecting to archive.ubuntu.com]                                                                   3822 kB/s 0s99% [Waiting for headers]                                                                                                        3822 kB/s 0s                                                                                                                                             Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [50.4 kB]
+99% [17 Packages 2648 B/50.4 kB 5%]                                                                                              3822 kB/s 0s99% [Working]                                                                                                                    3822 kB/s 0s99% [17 Packages store 0 B] [Connecting to archive.ubuntu.com]                                                                   3822 kB/s 0s99% [Connecting to archive.ubuntu.com (91.189.91.83)]                                                                            3822 kB/s 0s                                                                                                                                             Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [28.1 kB]
+99% [18 Packages 1204 B/28.1 kB 4%]                                                                                              3822 kB/s 0s99% [Working]                                                                                                                    3822 kB/s 0s99% [18 Packages store 0 B]                                                                                                      3822 kB/s 0s100% [Working]                                                                                                                   3822 kB/s 0s                                                                                                                                             Fetched 29.6 MB in 15s (1951 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 6%Reading package lists... 6%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 73%Reading package lists... 76%Reading package lists... 76%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 88%Reading package lists... 88%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# apt-get install -y curl
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 6%Reading package lists... 6%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 76%Reading package lists... 76%Reading package lists... 79%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 88%Reading package lists... 88%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates libbrotli1 libcurl4 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh-4 openssl publicsuffix
+Suggested packages:
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql
+The following NEW packages will be installed:
+  ca-certificates curl libbrotli1 libcurl4 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh-4 openssl publicsuffix
+0 upgraded, 15 newly installed, 0 to remove and 1 not upgraded.
+Need to get 2988 kB of archives.
+After this operation, 7124 kB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 openssl amd64 3.0.2-0ubuntu1.14 [1184 kB]
+0% [1 openssl 4043 B/1184 kB 0%]17% [1 openssl 639 kB/1184 kB 54%]                                  33% [Working]             Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 ca-certificates all 20230311ubuntu0.22.04.1 [155 kB]
+33% [2 ca-certificates 4069 B/155 kB 3%]                                        39% [Working]             Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnghttp2-14 amd64 1.43.0-1ubuntu0.1 [76.7 kB]
+39% [3 libnghttp2-14 4070 B/76.7 kB 5%]                                       42% [Working]             Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpsl5 amd64 0.21.0-1.2build2 [58.4 kB]
+42% [4 libpsl5 4071 B/58.4 kB 7%]                                 45% [Working]             Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 publicsuffix all 20211207.1025-1 [129 kB]
+45% [5 publicsuffix 4069 B/129 kB 3%]                                     50% [Working]             Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbrotli1 amd64 1.0.9-2build6 [315 kB]
+50% [6 libbrotli1 4069 B/315 kB 1%]                                   59% [Working]             Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg2-3ubuntu1.2 [20.5 kB]
+59% [7 libsasl2-modules-db 4071 B/20.5 kB 20%]                                              61% [Working]             Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-2 amd64 2.1.27+dfsg2-3ubuntu1.2 [53.8 kB]
+61% [8 libsasl2-2 2611 B/53.8 kB 5%]                                    64% [Working]             Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-2.5-0 amd64 2.5.16+dfsg-0ubuntu0.22.04.2 [183 kB]
+64% [9 libldap-2.5-0 4069 B/183 kB 2%]                                      70% [Working]             Get:10 http://archive.ubuntu.com/ubuntu jammy/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build4 [58.2 kB]
+70% [10 librtmp1 4071 B/58.2 kB 7%]                                   73% [Working]             Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libssh-4 amd64 0.9.6-2ubuntu0.22.04.3 [186 kB]
+73% [11 libssh-4 2593 B/186 kB 1%]                                  79% [Working]             Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.15 [289 kB]
+80% [12 libcurl4 4069 B/289 kB 1%]                                  89% [Working]             Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 curl amd64 7.81.0-1ubuntu1.15 [194 kB]
+89% [13 curl 4053 B/194 kB 2%]95% [Working]                                                                                                                     462 kB/s 0s                                                                                                                                             Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-common all 2.5.16+dfsg-0ubuntu0.22.04.2 [15.5 kB]
+95% [14 libldap-common 4071 B/15.5 kB 26%]                                                                                        462 kB/s 0s97% [Working]                                                                                                                     462 kB/s 0s                                                                                                                                             Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-modules amd64 2.1.27+dfsg2-3ubuntu1.2 [68.8 kB]
+97% [15 libsasl2-modules 4070 B/68.8 kB 6%]                                                                                       462 kB/s 0s100% [Working]                                                                                                                    462 kB/s 0s                                                                                                                                             Fetched 2988 kB in 7s (439 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package openssl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4393 files and directories currently installed.)
+Preparing to unpack .../00-openssl_3.0.2-0ubuntu1.14_amd64.deb ...
+Unpacking openssl (3.0.2-0ubuntu1.14) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20230311ubuntu0.22.04.1_all.deb ...
+Unpacking ca-certificates (20230311ubuntu0.22.04.1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../02-libnghttp2-14_1.43.0-1ubuntu0.1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.43.0-1ubuntu0.1) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../03-libpsl5_0.21.0-1.2build2_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.0-1.2build2) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../04-publicsuffix_20211207.1025-1_all.deb ...
+Unpacking publicsuffix (20211207.1025-1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../05-libbrotli1_1.0.9-2build6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2build6) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../06-libsasl2-modules-db_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../07-libsasl2-2_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../08-libldap-2.5-0_2.5.16+dfsg-0ubuntu0.22.04.2_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.16+dfsg-0ubuntu0.22.04.2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../09-librtmp1_2.4+20151223.gitfa8646d.1-2build4_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Selecting previously unselected package libssh-4:amd64.
+Preparing to unpack .../10-libssh-4_0.9.6-2ubuntu0.22.04.3_amd64.deb ...
+Unpacking libssh-4:amd64 (0.9.6-2ubuntu0.22.04.3) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../11-libcurl4_7.81.0-1ubuntu1.15_amd64.deb ...
+Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.15) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../12-curl_7.81.0-1ubuntu1.15_amd64.deb ...
+Unpacking curl (7.81.0-1ubuntu1.15) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../13-libldap-common_2.5.16+dfsg-0ubuntu0.22.04.2_all.deb ...
+Unpacking libldap-common (2.5.16+dfsg-0ubuntu0.22.04.2) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../14-libsasl2-modules_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up libpsl5:amd64 (0.21.0-1.2build2) ...
+Setting up libbrotli1:amd64 (1.0.9-2build6) ...
+Setting up libsasl2-modules:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up libnghttp2-14:amd64 (1.43.0-1ubuntu0.1) ...
+Setting up libldap-common (2.5.16+dfsg-0ubuntu0.22.04.2) ...
+Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Setting up libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up libssh-4:amd64 (0.9.6-2ubuntu0.22.04.3) ...
+Setting up openssl (3.0.2-0ubuntu1.14) ...
+Setting up publicsuffix (20211207.1025-1) ...
+Setting up libldap-2.5-0:amd64 (2.5.16+dfsg-0ubuntu0.22.04.2) ...
+Setting up ca-certificates (20230311ubuntu0.22.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+137 added, 0 removed; done.
+Setting up libcurl4:amd64 (7.81.0-1ubuntu1.15) ...
+Setting up curl (7.81.0-1ubuntu1.15) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+Processing triggers for ca-certificates (20230311ubuntu0.22.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# [7mcurl -sL https://deb.nodesource.com/setup_16.x | bash[27m
+[7mapt install -y nodejs[27m[Acurl -sL https://deb.nodesource.com/setup_16.x | bash
+apt install -y nodejs
+[?2004l
+[1m[31m================================================================================(B[m
+[1m[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓(B[m
+[1m[31m================================================================================(B[m
+
+  [1m[33m                         [4mSCRIPT DEPRECATION WARNING(B[m                    (B[m
+
+  
+  This script, located at [1mhttps://deb.nodesource.com/setup_X(B[m, used to
+  install Node.js is deprecated now and will eventually be made inactive.
+
+  Please visit the NodeSource [1mdistributions(B[m Github and follow the
+  instructions to migrate your repo.
+  [4m[32m[1mhttps://github.com/nodesource/distributions(B[m
+
+  The [1mNodeSource(B[m Node.js Linux distributions GitHub repository contains
+  information about which versions of Node.js and which Linux distributions
+  are supported and how to install it.
+  [4m[32m[1mhttps://github.com/nodesource/distributions(B[m
+
+
+                          [4m[1m[33mSCRIPT DEPRECATION WARNING(B[m
+
+[1m[31m================================================================================(B[m
+[1m[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓(B[m
+[1m[31m================================================================================(B[m
+
+[36m[1mTO AVOID THIS WAIT MIGRATE THE SCRIPT(B[m
+Continuing in 60 seconds (press Ctrl-C to abort) ...
+
+^C
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 6%Reading package lists... 6%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 72%Reading package lists... 76%Reading package lists... 76%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 88%Reading package lists... 88%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 6%Reading state information... Done
+The following additional packages will be installed:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1 nodejs-doc
+Suggested packages:
+  apache2 | lighttpd | httpd npm
+The following NEW packages will be installed:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1 nodejs nodejs-doc
+0 upgraded, 8 newly installed, 0 to remove and 1 not upgraded.
+Need to get 24.4 MB of archives.
+After this operation, 89.5 MB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 libicu70 amd64 70.1-2 [10.6 MB]
+[33m0% [1 libicu70 4066 B/10.6 MB 0%][0m[33m2% [1 libicu70 508 kB/10.6 MB 5%][0m[33m10% [1 libicu70 2939 kB/10.6 MB 28%][0m[33m19% [1 libicu70 5802 kB/10.6 MB 55%][0m[33m28% [1 libicu70 8660 kB/10.6 MB 82%][0m[33m                                    37% [Working][0m             Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 libuv1 amd64 1.43.0-1 [93.1 kB]
+[33m37% [2 libuv1 4070 B/93.1 kB 4%][0m[33m                                40% [Working][0m             Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 javascript-common all 11+nmu1 [5936 B]
+[33m40% [3 javascript-common 4072 B/5936 B 69%][0m[33m                                           42% [Working][0m             Get:4 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libjs-highlight.js all 9.18.5+dfsg1-1 [367 kB]
+[33m43% [4 libjs-highlight.js 2593 B/367 kB 1%][0m[33m43% [4 libjs-highlight.js 151 kB/367 kB 41%][0m[33m                                            46% [Working][0m             Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-ares2 amd64 1.18.1-1ubuntu0.22.04.2 [45.0 kB]
+[33m46% [5 libc-ares2 4071 B/45.0 kB 9%][0m[33m                                    49% [Working][0m             Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libnode72 amd64 12.22.9~dfsg-1ubuntu3.3 [10.8 MB]
+[33m49% [6 libnode72 4066 B/10.8 MB 0%][0m[33m51% [6 libnode72 665 kB/10.8 MB 6%][0m[33m60% [6 libnode72 3441 kB/10.8 MB 32%]                                                                                            2347 kB/s 4s[0m[33m68% [6 libnode72 5798 kB/10.8 MB 54%]                                                                                            2347 kB/s 3s[0m[33m79% [6 libnode72 9337 kB/10.8 MB 87%]                                                                                            2347 kB/s 1s[0m[33m87% [Working]                                                                                                                    2347 kB/s 1s[0m                                                                                                                                             Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 nodejs-doc all 12.22.9~dfsg-1ubuntu3.3 [2410 kB]
+[33m87% [7 nodejs-doc 4067 B/2410 kB 0%]                                                                                             2347 kB/s 1s[0m[33m89% [7 nodejs-doc 630 kB/2410 kB 26%]                                                                                            2347 kB/s 0s[0m[33m97% [Working]                                                                                                                    2347 kB/s 0s[0m                                                                                                                                             Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 nodejs amd64 12.22.9~dfsg-1ubuntu3.3 [122 kB]
+[33m97% [8 nodejs 4069 B/122 kB 3%]                                                                                                  2347 kB/s 0s[0m[33m100% [Working]                                                                                                                   2347 kB/s 0s[0m                                                                                                                                             Fetched 24.4 MB in 9s (2766 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;12r8[1ASelecting previously unselected package libicu70:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4979 files and directories currently installed.)
+Preparing to unpack .../0-libicu70_70.1-2_amd64.deb ...
+7[13;0f[42m[30mProgress: [  0%][49m[39m [........................................................................................................................] 87[13;0f[42m[30mProgress: [  3%][49m[39m [###.....................................................................................................................] 8Unpacking libicu70:amd64 (70.1-2) ...
+7[13;0f[42m[30mProgress: [  6%][49m[39m [#######.................................................................................................................] 8Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../1-libuv1_1.43.0-1_amd64.deb ...
+7[13;0f[42m[30mProgress: [  9%][49m[39m [##########..............................................................................................................] 8Unpacking libuv1:amd64 (1.43.0-1) ...
+7[13;0f[42m[30mProgress: [ 12%][49m[39m [##############..........................................................................................................] 8Selecting previously unselected package javascript-common.
+Preparing to unpack .../2-javascript-common_11+nmu1_all.deb ...
+7[13;0f[42m[30mProgress: [ 15%][49m[39m [##################......................................................................................................] 8Unpacking javascript-common (11+nmu1) ...
+7[13;0f[42m[30mProgress: [ 18%][49m[39m [#####################...................................................................................................] 8Selecting previously unselected package libjs-highlight.js.
+Preparing to unpack .../3-libjs-highlight.js_9.18.5+dfsg1-1_all.deb ...
+7[13;0f[42m[30mProgress: [ 21%][49m[39m [#########################...............................................................................................] 8Unpacking libjs-highlight.js (9.18.5+dfsg1-1) ...
+7[13;0f[42m[30mProgress: [ 24%][49m[39m [#############################...........................................................................................] 8Selecting previously unselected package libc-ares2:amd64.
+Preparing to unpack .../4-libc-ares2_1.18.1-1ubuntu0.22.04.2_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 27%][49m[39m [################################........................................................................................] 8Unpacking libc-ares2:amd64 (1.18.1-1ubuntu0.22.04.2) ...
+7[13;0f[42m[30mProgress: [ 30%][49m[39m [####################################....................................................................................] 8Selecting previously unselected package libnode72:amd64.
+Preparing to unpack .../5-libnode72_12.22.9~dfsg-1ubuntu3.3_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 33%][49m[39m [#######################################.................................................................................] 8Unpacking libnode72:amd64 (12.22.9~dfsg-1ubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 36%][49m[39m [###########################################.............................................................................] 8Selecting previously unselected package nodejs-doc.
+Preparing to unpack .../6-nodejs-doc_12.22.9~dfsg-1ubuntu3.3_all.deb ...
+7[13;0f[42m[30mProgress: [ 39%][49m[39m [###############################################.........................................................................] 8Unpacking nodejs-doc (12.22.9~dfsg-1ubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 42%][49m[39m [##################################################......................................................................] 8Selecting previously unselected package nodejs.
+Preparing to unpack .../7-nodejs_12.22.9~dfsg-1ubuntu3.3_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 45%][49m[39m [######################################################..................................................................] 8Unpacking nodejs (12.22.9~dfsg-1ubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 48%][49m[39m [##########################################################..............................................................] 8Setting up javascript-common (11+nmu1) ...
+7[13;0f[42m[30mProgress: [ 52%][49m[39m [#############################################################...........................................................] 87[13;0f[42m[30mProgress: [ 55%][49m[39m [#################################################################.......................................................] 8Setting up libc-ares2:amd64 (1.18.1-1ubuntu0.22.04.2) ...
+7[13;0f[42m[30mProgress: [ 58%][49m[39m [#####################################################################...................................................] 87[13;0f[42m[30mProgress: [ 61%][49m[39m [########################################################################................................................] 8Setting up libuv1:amd64 (1.43.0-1) ...
+7[13;0f[42m[30mProgress: [ 64%][49m[39m [############################################################################............................................] 87[13;0f[42m[30mProgress: [ 67%][49m[39m [###############################################################################.........................................] 8Setting up libjs-highlight.js (9.18.5+dfsg1-1) ...
+7[13;0f[42m[30mProgress: [ 70%][49m[39m [###################################################################################.....................................] 87[13;0f[42m[30mProgress: [ 73%][49m[39m [#######################################################################################.................................] 8Setting up libicu70:amd64 (70.1-2) ...
+7[13;0f[42m[30mProgress: [ 76%][49m[39m [##########################################################################################..............................] 87[13;0f[42m[30mProgress: [ 79%][49m[39m [##############################################################################################..........................] 8Setting up libnode72:amd64 (12.22.9~dfsg-1ubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 82%][49m[39m [##################################################################################################......................] 87[13;0f[42m[30mProgress: [ 85%][49m[39m [#####################################################################################################...................] 8Setting up nodejs-doc (12.22.9~dfsg-1ubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 88%][49m[39m [#########################################################################################################...............] 87[13;0f[42m[30mProgress: [ 91%][49m[39m [#############################################################################################################...........] 8Setting up nodejs (12.22.9~dfsg-1ubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 94%][49m[39m [################################################################################################################........] 8update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/js.1.gz because associated file /usr/share/man/man1/nodejs.1.gz (of link group js) doesn't exist
+7[13;0f[42m[30mProgress: [ 97%][49m[39m [####################################################################################################################....] 8Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+
+7[0;13r8[1A[J[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# [Knode -v
+[?2004lv12.22.9
+[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# npm -v
+[?2004lbash: npm: command not found
+[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# npm install
+[?2004lbash: npm: command not found
+[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# node index.js
+[?2004linternal/modules/cjs/loader.js:818
+  throw err;
+  ^
+
+Error: Cannot find module '/index.js'
+[90m    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)[39m
+[90m    at Function.Module._load (internal/modules/cjs/loader.js:667:27)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)[39m
+[90m    at internal/main/run_main_module.js:17:47[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: []
+}
+[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# cd /usr/src/app
+[?2004l[?2004h]0;root@71aaf7d11909: /usr/src/approot@71aaf7d11909:/usr/src/app# node index.js
+[?2004lHello World
+[?2004h]0;root@71aaf7d11909: /usr/src/approot@71aaf7d11909:/usr/src/app# exit
+[?2004lexit
+[?2004h]0;jtang@LAPTOP-68T1LIDQ: /mnt/d/CODE/part12-containers-applications/script-answers[01;32mjtang@LAPTOP-68T1LIDQ[00m:[01;34m/mnt/d/CODE/part12-containers-applications/script-answers[00m$ sudo docker start -i nice_curie
+[?2004l[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# [K]0;root@71aaf7d11909: /root@71aaf7d11909:/# docker commit nice_curie hello-node-world
+[?2004lbash: docker: command not found
+[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# [Kcommit nice_curie hello-node-world
+[?2004lbash: commit: command not found
+[?2004h]0;root@71aaf7d11909: /root@71aaf7d11909:/# [Kexit
+[?2004lexit
+[?2004h]0;jtang@LAPTOP-68T1LIDQ: /mnt/d/CODE/part12-containers-applications/script-answers[01;32mjtang@LAPTOP-68T1LIDQ[00m:[01;34m/mnt/d/CODE/part12-containers-applications/script-answers[00m$ docker commit nice_curie hello-node-world
+[?2004lGot permission denied while trying to connect to the Docker daemon socket at unix:///var/runubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 42%][49m[39m [##################################################......................................................................] 8Selecting previously unselected package nodejs.
+Preparing to unpack .../7-nodejs_12.22.9~dfsg-1ubuntu3.3_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 45%][49m[39m [######################################################..................................................................] 8Unpacking nodejs (12.22.9~dfsg-1ubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 48%][49m[39m [##########################################################..............................................................] 8Setting up javascript-common (11+nmu1) ...
+7[13;0f[42m[30mProgress: [ 52%][49m[39m [#############################################################...........................................................] 87[13;0f[42m[30mProgress: [ 55%][49m[39m [#################################################################.......................................................] 8Setting up libc-ares2:amd64 (1.18.1-1ubuntu0.22.04.2) ...
+7[13;0f[42m[30mProgress: [ 58%][49m[39m [#####################################################################...................................................] 87[13;0f[42m[30mProgress: [ 61%][49m[39m [########################################################################................................................] 8Setting up libuv1:amd64 (1.43.0-1) ...
+7[13;0f[42m[30mProgress: [ 64%][49m[39m [############################################################################............................................] 87[13;0f[42m[30mProgress: [ 67%][49m[39m [###############################################################################.........................................] 8Setting up libjs-highlight.js (9.18.5+dfsg1-1) ...
+7[13;0f[42m[30mProgress: [ 70%][49m[39m [###################################################################################.....................................] 87[13;0f[42m[30mProgress: [ 73%][49m[39m [#######################################################################################.................................] 8Setting up libicu70:amd64 (70.1-2) ...
+7[13;0f[42m[30mProgress: [ 76%][49m[39m [##########################################################################################..............................] 87[13;0f[42m[30mProgress: [ 79%][49m[39m [##############################################################################################..........................] 8Setting up libnode72:amd64 (12.22.9~dfsg-1ubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 82%][49m[39m [##################################################################################################......................] 87[13;0f[42m[30mProgress: [ 85%][49m[39m [#####################################################################################################...................] 8Setting up nodejs-doc (12.22.9~dfsg-1ubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 88%][49m[39m [#########################################################################################################...............] 87[13;0f[42m[30mProgress: [ 91%][49m[39m [#############################################################################################################...........] 8Setting up nodejs (12.22.9~dfsg-1ubuntu3.3) ...
+7[13;0f[42m[30mProgress: [ 94%][49m[39m [################################################################################################################........] 8update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/js.1.gz because associated file /usr/share/man/man1/nodejs.1.gz (of link group js) doesn't exist
+7[13;0f[42m[30mProgress: [ 97%][49m[39m [####################################################################################################################....] 8Processing trigge
